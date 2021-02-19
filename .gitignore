@@ -58,6 +58,9 @@ builds/
 # Local .terraform directories
 **/.terraform/*
 
+# Local .terraform build files
+**/.terraform.lock.hcl
+
 # secret variable files
 **/secrets.tfvars
 

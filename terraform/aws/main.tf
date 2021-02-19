@@ -82,24 +82,7 @@ resource "aws_cloudwatch_event_rule" "security_hub_findings_to_rocketchat" {
 {
   "source": [
       "aws.securityhub"
-  ],
-  "detail-type": [
-    "Security Hub Findings - Imported"
-  ],
-  "detail": {
-      "findings": {
-          "Severity": {
-              "Label": [
-                  "HIGH", "CRITICAL"
-              ]
-          },
-          "ProductFields": {
-              "aws/securityhub/ProductName": [
-                  "GuardDuty"
-              ]
-          }
-      }
-  }
+  ]
 }
 EOF
 
