@@ -10,6 +10,8 @@ provider "aws" {
   region = var.aws_region
 }
 
+
+
 locals {
   //Put all common tags here
   common_tags = {
